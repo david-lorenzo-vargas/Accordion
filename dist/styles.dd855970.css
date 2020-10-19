@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1em;
+}
+
+
+.accordion {
+  border: 1px solid #ddd;
+}
+
+.accordion--active .accordion__header {
+  background-color: black;
+  color: white;
+}
+
+.accordion--active .accordion__body {
+  opacity: 1;
+}
+
+.accordion__header {
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+.accordion__body__content {
+  padding: 20px 10px;
+}
+
+.accordion__body {
+  overflow: hidden;
+  height: 0px;
+  opacity: 0;
+  transition-property: height opacity;
+  transition-duration: .3s;
+}
+
+.accordion__body p {
+  margin-bottom: 1em;
+}
+
+
+/*# sourceMappingURL=/styles.dd855970.css.map */
